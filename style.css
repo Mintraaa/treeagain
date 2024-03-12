@@ -1,0 +1,27 @@
+.folder, .file {
+    margin-left: 20px;
+}
+
+.folder::before, .file::before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    background-size: cover;
+}
+
+.folder::before {
+    background-image: url('./Pig/file-icon.png');
+}
+
+.file::before {
+    background-image: url('./Pig/folder-icon.png');
+}
+.selected {
+    background-color: #a0cffd; /* เพิ่มสีพื้นหลังเมื่อถูกเลือก */
+}
+.folder {
+    margin-left: 20px;
+    cursor: pointer; /* เพิ่ม cursor เมื่อนำเมาส์ไปวางที่โฟลเดอร์ */
+}

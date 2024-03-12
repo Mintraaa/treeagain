@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Folder Structure Tree</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="folderTree"></div>
+        <input type="text" id="folderNameInput" placeholder="Enter folder name">
+        <button class="add-button" onclick="addFolder()">Add Folder</button>    
+        <input type="text" id="fileNameInput" placeholder="Enter file name">
+        <button class="add-button" onclick="addFile()">Add File</button>
+    
+    <!-- New UI for moving files/folders -->
+    <label for="moveTarget">Move to:</label>
+    <select id="moveTarget">
+        <!-- Dynamically populate options based on folder structure -->
+        <option value="">Select destination</option>
+    </select>
+    <button class="move-button" onclick="moveItem()">Move</button>
+    
+    <script src="script.js"></script>
+</body>
+</html>
